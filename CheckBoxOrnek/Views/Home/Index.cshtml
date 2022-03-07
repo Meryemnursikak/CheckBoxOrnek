@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/AnimatedCheckBox.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h2>Animasyonlu Checkbox...</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-1">Alınma Durumu</label>
+                        <div class="col-md-11 checkbox">
+
+                            <label>
+                                @Html.CheckBox("alindi", false)
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                Alındı
+                            </label>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-1">Ödenme Durumu</label>
+                        <div class="col-md-11 checkbox">
+
+                            <label>
+                                @Html.CheckBox("odendi", false)
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                Ödendi
+                            </label>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
